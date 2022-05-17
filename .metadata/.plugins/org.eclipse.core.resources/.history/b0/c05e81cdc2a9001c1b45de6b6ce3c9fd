@@ -1,0 +1,46 @@
+package ai.jobiak.Assesment_3;
+import java.sql.*;
+import java.util.Scanner;
+
+public class Assessment_3_ResultSet {
+
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		Scanner sc = new Scanner(System.in);
+		int choice = sc.nextInt();
+        Class.forName("com.mysql.cj.jdbc.Driver");
+					
+			String userName = "root";
+			String passWord = "admin";
+			String url = "jdbc:mysql://localhost:3306/world";
+					Connection con = DriverManager.getConnection(url,userName,passWord);
+					System.out.println("Connected to db......");
+					
+					Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+					System.out.println("Inserting records into the table...");          
+			        String sql = "INSERT INTO MAIL VALUES (anil4java2@gmail.com,'About the today session','we have session at 9am on AdvJavaBackend@jobiak.ai#anilBoppuri',30)";
+//			        stmt.executeUpdate(sql);
+//			        sql = "INSERT INTO MAIL VALUES (101, 'Mahnaz', 'Fatma', 25)";
+//			        stmt.executeUpdate(sql);
+//			        sql = "INSERT INTO MAIL VALUES (102, 'Zaid', 'Khan', 30)";
+//			        stmt.executeUpdate(sql);
+				
+//					String selectSql = "select * from customer";  //sql syntax
+//					ResultSet rs = stmt.executeQuery(selectSql);
+					
+//					if(rs.next()) {
+//						
+//						rs.absolute(12);
+//						rs.deleteRow();//upon deleting a record the cursor moves one row up and displays that record when we fetch
+//						
+//						System.out.println(rs.getInt(1)+ " :: "+rs.getString(2)+" :: "+rs.getString(3));
+//						
+//					}
+					
+				
+				
+			}
+
+		
+
+	}
+

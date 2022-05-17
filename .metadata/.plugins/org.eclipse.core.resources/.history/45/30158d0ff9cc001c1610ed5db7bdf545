@@ -1,0 +1,27 @@
+package ai.jobiak.streams;
+import java.util.*;
+import java.util.function.*;
+public class TestStreams {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> list = new ArrayList();
+		list.add("Apple");
+		list.add("Banana");
+		list.add("Orange");
+		list.add("Grapes");
+		/*Iterator<String> iter = list.iterator();
+		while(iter.hasNext()) {
+			String ele = iter.next();
+			System.out.println(ele);*/
+		//java 8 streams are all about collections
+		list.stream().forEach(System.out::println);
+		//a Stream has three operations 1 filter(Predicate Interface) 2. map function(Function Interface) and 3 terminal operation(Consumer Interface)
+		
+		Consumer<String> consumer = (String str)->{System.out.println(str);};
+		}
+		
+
+	}
+
+

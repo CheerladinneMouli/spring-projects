@@ -1,0 +1,26 @@
+--> we are creating classes like 
+java Beans/POJO's/ Entity
+repository,controller,service ..etc
+
+--> in class we will write variables,set/get methods,tostring,hashcode with equals
+
+-->Project lombok : It is open source java API
+it generates code for
+1.constructors
+2.set/get methods
+3.toSTring
+4.hash code with equals
+============================================
+These are the annotations we are going to use
+package Lombok
+-----------------
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
+@EqualsAnd HashCode
+@Data
+---------------------------------------------------------
+a.manual approach
+b.id installation

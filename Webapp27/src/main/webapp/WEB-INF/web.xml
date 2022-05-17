@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Webapp27</display-name>
+  <param-name>counter</param-name>
+<param-value>25</param-value>
+  <servlet>
+    <servlet-name>JdbcConfigServlet</servlet-name>
+    <servlet-class>ai.jobiak.Configserver.JdbcConfigServlet</servlet-class>
+    <init-param>
+      <description>user name for db</description>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <description>db password</description>
+      <param-name>password</param-name>
+      <param-value>admin</param-value>
+    </init-param>
+    <init-param>
+      <description>mysql connect</description>
+      <param-name>url</param-name>
+      <param-value>jdbc:mysql://localhost:3306/world</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JdbcConfigServlet</servlet-name>
+    <url-pattern>/JdbcConfigServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>link.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

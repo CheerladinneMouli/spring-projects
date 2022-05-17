@@ -1,0 +1,10 @@
+package ai.jobiak.lombok;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

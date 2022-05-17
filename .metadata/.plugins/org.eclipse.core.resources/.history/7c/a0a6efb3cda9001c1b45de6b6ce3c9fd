@@ -1,0 +1,79 @@
+package ai.jobiak.Assesment_3;
+import java.sql.*;
+import java.util.Scanner;
+
+public class Assessment_3_ResultSet {
+
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("******************MAIL INBOX***************");
+		System.out.println();
+		System.out.println("1.first mail");
+		System.out.println("2.next mail");
+		System.out.println("3.previous mail");
+		System.out.println("4.last mail");
+		System.out.println("5.Go to desired mail");
+		System.out.println("6.exit mail box");
+		System.out.println(" ENTER YOUR CHOICE ");
+		int choice = sc.nextInt();
+        Class.forName("com.mysql.cj.jdbc.Driver");
+					
+			String userName = "root";
+			String passWord = "admin";
+			String url = "jdbc:mysql://localhost:3306/world";
+					Connection con = DriverManager.getConnection(url,userName,passWord);
+					System.out.println("Connected to db......");
+					
+					Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+					System.out.println("Inserting records into the table...");  
+					String from[] = {"hema","kavitha","vyshnavi","triveni","supraja","jyothi","anitha"};
+					String subject[] = {"tomcat issue","eclipse not working","want to go out","shopping","want book your java note book","cannot understand today topic","maven not working"};
+					String mailcontent[] = {"i have a tomcat issue can you please help to it","my eclipse is not working please help me","i want to go out can u come with me","i want to go shopping please come","i miss the java classess please give your note book","can you explain this topic"+""
+							+ "my maven is not working can you plz help"};
+					int contentsize[]= {20,30,40,25,50,40,35};
+				    for(int i=1;i<from.length;i++) {
+				    	PreparedStatement pstmt = con.prepareStatement("insert into mailbox values(?,?,?,?,?");
+				    	pstmt.setInt(1,i+1);
+				    	pstmt.setString(2,from[i]);
+				    	pstmt.setString(3,subject[i]);
+				    	pstmt.setString(4,mailcontent[i]);
+				    	pstmt.setInt(5,contentsize[i]);
+				    }	
+				    switch(choice) {
+				    case 1:
+				    	String sql = "select * from mailbox";
+				    	ResultSet rs = stmt.executeQuery(sql);
+				    	rs.first();
+				    	System.out.println("the first row is shown");
+				    	System.out.println(rs.getString(1)+": from ->"+rs.getString(2)+":subject ->"+rs.getString(3)+":mailcontent ->"+rs.getString(4)+":contentsize ->");
+				    	
+				    	
+				    case 2:
+				    	int mailno;
+				    	System.out.println("please enter the mail");
+				    	mailno = sc.nextInt();
+				    	System.out.println("the mail number you want is -> "+mailno);
+				    	System.out.println("the mail next you want is given below");
+				    	String sql1 = "select * from mailbox";
+				    	ResultSet rs1 = stmt.executeQuery(sql1);
+				    	rs1.absolute(mailno);
+				    	
+				    case 3:
+				    	
+				    		System.out.println("there is no previous records");
+				    case 4:
+				    	rs.last();
+				        System.out.println("LAST RECORD...");
+				        System.out.println(rs.getString(1)+": from ->"+rs.getString(2)+":subject ->"+rs.getString(3)+":mailcontent ->"+rs.getString(4)+":contentsize ->");
+				        rs.previous();
+				        
+				    	}
+				    	
+				    }
+				
+			}
+
+		
+
+	}
+

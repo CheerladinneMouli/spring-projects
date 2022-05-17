@@ -1,0 +1,37 @@
+
+Mar 28, 2022 15:50:28.742 NEW SESSION
+Mar 28, 2022 15:50:28.742 [8084:13900:0328/155028.739:ERROR:device_event_log_impl.cc(214)] [15:50:28.739] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Mar 30, 2022 04:35:35.905 NEW SESSION
+Mar 30, 2022 04:35:35.905 [9740:5736:0330/043535.904:ERROR:device_event_log_impl.cc(214)] [04:35:35.903] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Mar 30, 2022 07:49:48.823 NEW SESSION
+Mar 30, 2022 07:49:48.823 [11408:11184:0330/074948.822:ERROR:device_event_log_impl.cc(214)] [07:49:48.822] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Mar 30, 2022 07:50:43.141 [1848:6544:0330/075043.140:ERROR:device_event_log_impl.cc(214)] [07:50:43.140] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Mar 30, 2022 16:01:40.302 NEW SESSION
+Mar 30, 2022 16:01:40.302 [9684:7444:0330/160140.301:ERROR:device_event_log_impl.cc(214)] [16:01:40.301] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Mar 30, 2022 16:34:50.591 [7704:11204:0330/163450.591:ERROR:device_event_log_impl.cc(214)] [16:34:50.591] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Mar 30, 2022 16:48:10.720 [7704:11204:0330/164810.719:ERROR:interface_endpoint_client.cc(659)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+Mar 31, 2022 13:22:07.277 NEW SESSION
+Mar 31, 2022 13:22:07.277 [12208:13876:0331/132207.274:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Mar 31, 2022 13:22:28.774 [12208:13876:0331/132228.774:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+
+Mar 31, 2022 15:05:59.371 NEW SESSION
+Mar 31, 2022 15:05:59.371 [10336:16740:0331/150559.369:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+Apr 08, 2022 11:35:27.610 NEW SESSION
+Apr 08, 2022 11:35:27.610 [11744:10044:0408/113527.607:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Apr 08, 2022 11:52:18.379 [11744:9272:0408/115218.378:ERROR:interface_endpoint_client.cc(659)] Message 1 rejected by interface blink.mojom.WidgetHost
+Apr 08, 2022 11:58:06.650 [11744:9272:0408/115806.648:ERROR:interface_endpoint_client.cc(659)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+Apr 08, 2022 12:55:11.766 NEW SESSION
+Apr 08, 2022 12:55:11.766 [1196:4916:0408/125511.765:ERROR:device_event_log_impl.cc(214)] [12:55:11.765] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 08, 2022 12:56:09.657 [1196:9496:0408/125609.657:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+Apr 11, 2022 09:10:38.417 NEW SESSION
+Apr 11, 2022 09:10:38.417 [17392:11692:0411/091038.415:ERROR:device_event_log_impl.cc(214)] [09:10:38.415] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 11, 2022 09:11:36.272 [17392:16336:0411/091136.272:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Apr 11, 2022 09:26:52.684 [11780:16748:0411/092652.684:ERROR:device_event_log_impl.cc(214)] [09:26:52.684] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 11, 2022 09:27:50.582 [11780:14764:0411/092750.582:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

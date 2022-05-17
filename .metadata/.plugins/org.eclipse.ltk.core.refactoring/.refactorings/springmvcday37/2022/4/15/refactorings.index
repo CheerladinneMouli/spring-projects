@@ -1,0 +1,12 @@
+1649309743769	Delete element
+1649310250916	Move 'webapp' to 'src'
+1649310266839	Move 'webapp' to 'main'
+1649310425454	Move 'lib' to 'WEB-INF'
+1649310762436	Move 'web.xml' to 'WEB-INF'
+1649330374864	Delete element
+1649332522244	Move 'beans.xml' to 'target'
+1649332530188	Move 'beans.xml' to 'springmvcday37'
+1649344858642	Rename compilation unit 'jdbc.java'
+1649397987299	Delete element
+1649401455500	Delete element
+1649403272765	Delete element

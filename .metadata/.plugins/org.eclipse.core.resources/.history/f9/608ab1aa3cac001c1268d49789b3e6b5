@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Jobiak Signup page</title>
+</head>
+<body>
+ <h3 align = "center">
+       
+        <form method="post" action="signup" >
+        Enter full name:<input type="text" name="fname" placeholder="aaaaa"><br/>
+        Enter Mail id:<input type="text" name="email" placeholder="mouli.cheerladinne@gmail.com"><br/>
+        Enter Mobileno:<input type="text" name="mobile" placeholder="6309136705"><br/>
+        <input type="submit" value="signup">
+        <input type="reset" value="clear">
+        
+                </form>
+        </h3>
+
+</body>
+</html>

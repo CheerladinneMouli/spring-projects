@@ -1,0 +1,23 @@
+package ai.jobiak.streams;
+import java.util.*;
+public class TestStreams {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> list = new ArrayList();
+		list.add("Apple");
+		list.add("Banana");
+		list.add("Orange");
+		list.add("Grapes");
+		/*Iterator<String> iter = list.iterator();
+		while(iter.hasNext()) {
+			String ele = iter.next();
+			System.out.println(ele);*/
+		//java 8 streams are all about collections
+		list.stream().forEach(System.out::println);
+		}
+		
+
+	}
+
+

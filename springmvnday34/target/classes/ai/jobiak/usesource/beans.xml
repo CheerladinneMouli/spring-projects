@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<bean name="aObj" class="ai.jobiak.source.A" scope="singleton"></bean>
+<bean name="b" class="ai.jobiak.usesource.B">
+<property name="a" ref="aObj"></property>
+
+</bean>
+<bean name="aimpl" class="ai.jobiak.ifaces.Aimpl"></bean>
+<bean name="cimpl" class="ai.jobiak.ifaces.Cimpl"></bean>
+<bean name="bDigital" class="ai.jobiak.ifaces.BDigital" scope="singleton" init-method="doInit">
+<property name="printable" ref="aimpl"></property>
+<constructor-arg ref="cimpl"></constructor-arg>
+</bean>
+</beans>
